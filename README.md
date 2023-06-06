@@ -74,23 +74,24 @@ b. API Name: **Sleeping Time**
         - 200 OK: The request is successful
         - 401 Unauthorized: If authentication credentials are missing or invalid. If the token is tampered.
         - 500 Internal Server Error: If an unexpected error occured at the server side.
-   c. API Name: **Wake Time**
+        
+c. API Name: **Wake Time**
    
-        Endpoint: /api/v1/sleep/assessment
-        Method: POST
-        Description:
-        - This post request will have the waking time as a field in the request body.
-        - JWT token will be added to the request headers.
-        - We can analyze the difference between the "sleeping time" and the "waking-time" and estimate the no.of hours of sleep the user gets, so it would be easier for the user to choose an option around the suggested one.
-        Parameters:
-            1. waking-time
-            Type : time
-            Required: Yes
-        Request Headers: 
-        {
-            Content-Type : "application/json",
-            Authorization : "Bearer <token>"
-        }
+    Endpoint: /api/v1/sleep/assessment
+    Method: POST
+    Description:
+    - This post request will have the waking time as a field in the request body.
+    - JWT token will be added to the request headers.
+    - We can analyze the difference between the "sleeping time" and the "waking-time" and estimate the no.of hours of sleep the user gets, so it would be easier for the user to choose an option around the suggested one.
+    Parameters:
+        1. waking-time
+        Type : time
+        Required: Yes
+    Request Headers: 
+    {
+        Content-Type : "application/json",
+        Authorization : "Bearer <token>"
+    }
     Request Body:
         Format: JSON
         Example:
@@ -110,4 +111,40 @@ b. API Name: **Sleeping Time**
         - 200 OK: The request is successful
         - 401 Unauthorized: If authentication credentials are missing or invalid. If the token is tampered.
         - 500 Internal Server Error: If an unexpected error occured at the server side.
-    
+
+d. API Name: **Sleep Hours**
+        
+    Endpoint: /api/v1/sleep/assessment
+    Method: POST
+    Description:
+    - This post request will have the no.of sleep hours as a field in the request body.
+    - JWT token will be added to the request headers.
+    - We can add all the data to the database and analyze it to maybe rate the mental health of the user in a scale of 1-10. This can be sent as a response for the request.
+    Parameters:
+        1. sleep-hours
+        Type : integer
+        Required: Yes
+    Request Headers: 
+    {
+        Content-Type : "application/json",
+        Authorization : "Bearer <token>"
+    }
+    Request Body:
+        Format: JSON
+        Example:
+            {
+                sleep-hours : <int>
+            }
+    Response:
+        Format: JSON
+        Example:
+            {
+                status: "success",
+                mental-health-rating : <an integer>
+            }
+    Response Desc: We can use the data to analyze and extract different type of information, but here I'm trying to rate the mental health of the user.
+    Response Code:
+        - 200 OK: The request is successful
+        - 401 Unauthorized: If authentication credentials are missing or invalid. If the token is tampered.
+        - 500 Internal Server Error: If an unexpected error occured at the server side.
+
