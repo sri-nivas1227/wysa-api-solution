@@ -4,9 +4,8 @@
 - [API Interaction Flow](https://github.com/sri-nivas1227/wysa-api-solution/blob/main/ApI.md)
 - [Database Schema](https://github.com/sri-nivas1227/wysa-api-solution/blob/main/schema.md)
 - [React Preview](https://wysa-sleep-app.netlify.app/)
-- [Frontend code](https://github.com/sri-nivas1227/wysa-api-solution/tree/main/wysa-frontend)
-- [Server Code](https://github.com/sri-nivas1227/wysa-api-solution/tree/main/wysa-server)
-- 
+- [Frontend code](https://github.com/sri-nivas1227/wysa-frontend)
+- [Server Code](https://github.com/sri-nivas1227/wysa-backend)
 
 ## Task 2
 - [LeetCode Challenge Submission link](https://leetcode.com/playground/NKeXfvbw)
