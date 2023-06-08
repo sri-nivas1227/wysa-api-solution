@@ -14,7 +14,9 @@
 ## Bonus Points
 ### Samples of database storage
 Assessment data
+
 ![image](https://github.com/sri-nivas1227/wysa-api-solution/assets/83027963/2a9843f8-9743-4e6a-8485-7cea652776b3)
 
 User data
+
 ![image](https://github.com/sri-nivas1227/wysa-api-solution/assets/83027963/89840803-ef04-405e-9efe-6cf3d2b5292a)
