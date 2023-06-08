@@ -4,7 +4,7 @@
 ### 1. API interaction flows
 a.    API Name: **Sleeping Struggle Period**
     
-    API Endpoint: /api/v1/sleep/assessment
+    API Endpoint: /api/v1/sleep/assessment/struggle-period
     Method: POST
     Description: 
         - This is an assessment in the sleep app. So, everything that happens inside the 'sleep' app can be comprised under the sleep path.
@@ -14,7 +14,7 @@ a.    API Name: **Sleeping Struggle Period**
         1. sleep-struggle-period
             Type: string
             Desc: the time period can be three fixed strings (as per the options provided in the example),
-                  "<2"  or  ">2&<8"  or ">8" so we can perform required operations based on the answer using conditional statements.
+                  "<2"  or  "2-8"  or ">8" so we can perform required operations based on the answer using conditional statements.
             Required: Yes
     Request Headers:
         {
@@ -41,7 +41,7 @@ a.    API Name: **Sleeping Struggle Period**
     
 b. API Name: **Sleeping Time**
 
-    Endpoint: /api/v1/sleep/assessment
+    Endpoint: /api/v1/sleep/assessment/sleeping-time
     Method: POST
     Description:
         - This post request will have the waking time as a field in the request body.
@@ -77,7 +77,7 @@ b. API Name: **Sleeping Time**
         
 c. API Name: **Wake Time**
    
-    Endpoint: /api/v1/sleep/assessment
+    Endpoint: /api/v1/sleep/assessment/waking-time
     Method: POST
     Description:
     - This post request will have the waking time as a field in the request body.
@@ -114,7 +114,7 @@ c. API Name: **Wake Time**
 
 d. API Name: **Sleep Hours**
         
-    Endpoint: /api/v1/sleep/assessment
+    Endpoint: /api/v1/sleep/assessment/sleep-hours
     Method: POST
     Description:
     - This post request will have the no.of sleep hours as a field in the request body.
